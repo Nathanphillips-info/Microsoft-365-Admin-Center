@@ -14,4 +14,13 @@ This page is for documentation of basic Microsoft 365 Admin Center functionality
 - To add teams and groups, go to teams and groups/active teams and groups. Then in the menu you can create a new team or microsoft 365 group. A group includes a group email for contacting everyone and a sharpoint site to collaborate. A team provides a teams group to message and edit files together through teams. Each team and group can have owners and members.
 - Under teams and groups you can also add security groups which can give or limit access to certain resources on SharePoint sites. These might be best configured in the Entra ID portal. There you can configure the group further and add users giving them special privelages or restrictions.
 - Under Shared mailboxes, you can also create a shared mailbox for users or groups that you have created for them to recieve emails together.
-- You can access deleted users or groups data for 30 days.  
+- You can access deleted users or groups data for 30 days.
+- I created several users, assigned them licenses, and made groups for them, such as accounting, help desk, and system administrators. 
+
+
+# Microsoft Exchange Admin Portal 
+In the exchange admin portal you can assign roles for data protection, trace mail routes, create rules for messages. You can manage sharing policies for mailboxes and calanders and you can look at mailflow reports. If you find any suspicious emails you can also report them in exchange, taking you to the security and compliance page. 
+
+- I created a rule that all email must use TLS encryption.
+- I created a web app policy where people could only open attachtments on private devices and it would not sync with mobile devices.
+- You can also use message trace to see lost emails. I searched for emails sent from the primary domain in the last day. 
