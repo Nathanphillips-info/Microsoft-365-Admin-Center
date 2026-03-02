@@ -23,4 +23,8 @@ In the exchange admin portal you can assign roles for data protection, trace mai
 
 - I created a rule that all email must use TLS encryption.
 - I created a web app policy where people could only open attachtments on private devices and it would not sync with mobile devices.
-- You can also use message trace to see lost emails. I searched for emails sent from the primary domain in the last day. 
+- You can also use message trace to see lost emails. I searched for emails sent from the primary domain in the last day.
+
+# Microsoft Entra ID Portal 
+
+Microsoft Entra ID handles User identities devices and application access. You can use conditional access, role based access control. You can configure advanced group access, 
