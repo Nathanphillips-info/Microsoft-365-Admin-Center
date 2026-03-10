@@ -27,4 +27,18 @@ In the exchange admin portal you can assign roles for data protection, trace mai
 
 # Microsoft Entra ID Portal 
 
-Microsoft Entra ID handles User identities devices and application access. You can use conditional access, role based access control. You can configure advanced group access, 
+Microsoft Entra ID handles User identities devices and application access. You can use conditional access, role based access control. You can configure advanced group access. There are two different ways to join devices to entra ID. One way is when a user logs in to access corporate resources from there personally owned device. They would be Entra ID registered. If the device is corporately owned you can make the device entra ID joined. A device can also be enrolled in Microsoft Intune. 
+- In my Entra portal I created a conditional access rule that requires admins to login using multi factor authentication.You can even manage which methods of multi factor auth or passwordless auth that is necessary to authenticate for microsoft 365 users. 
+- I created a security group for the finance team. In entra you can manage which applications groups and users have access too. If you had specific resources to ristrict you could do it there, like specific applications.
+-  in Entra I created a dynamic device group for all windows 11 devices to be added to this group.
+- I added another user in the admin center and put them in the executive department. Then I created an executive users security group and added a dynamic membership rule that added the new user I created in the executive group. 
+
+I don't have access to everythinf In Entra since I am using a trial, but you can automate adding and removing users from groups in governance in entra and give temporary access through entitlement management access packages. That way you can give those who need it temporary access. 
+
+# Microsoft Intune
+
+In Microsoft Intune you can manage devices owned by the particular company tha is using 365. There you can manage and apply security baselines for particular devices that your business is using. In intune you can create security policies for all devices enrolled in Intune. You can create policies for the firwall, antivirus, and disk encryption. You can also create policies for end point detection and response. In intune you can also install applications to all the devices enrolled in Intune and Entra for business. In doing this you can also configure the default file format and update channel. 
+
+- In intune you can create configuration policies which affect the devices and give you centralized management.
+- I created a device restrictions policy that requires passwords and restricts password sharing on all IOS devices except for those in the System administrator group. 
+
