@@ -37,8 +37,9 @@ I don't have access to everythinf In Entra since I am using a trial, but you can
 
 # Microsoft Intune
 
-In Microsoft Intune you can manage devices owned by the particular company tha is using 365. There you can manage and apply security baselines for particular devices that your business is using. In intune you can create security policies for all devices enrolled in Intune. You can create policies for the firwall, antivirus, and disk encryption. You can also create policies for end point detection and response. In intune you can also install applications to all the devices enrolled in Intune and Entra for business. In doing this you can also configure the default file format and update channel. 
+In Microsoft Intune you can manage devices owned by the particular company tha is using 365. There you can manage and apply security baselines for particular devices that your business is using. In intune you can create security policies for all devices enrolled in Intune. You can create policies for the firwall, antivirus, and disk encryption. You can also create policies for end point detection and response. In intune you can also install applications to all the devices enrolled in Intune and Entra for business. In doing this you can also configure the default file format and update channel. In Intune you can also allow users to have their own devices and encrypt certain apps on their device for security reasons. Even if they leave the company you could then remove the applications via intune from their device. In App protections you can configure policies like, blocking organizational data to automaticlally backup to icloud on ios devices. 
 
 - In intune you can create configuration policies which affect the devices and give you centralized management.
-- I created a device restrictions policy that requires passwords and restricts password sharing on all IOS devices except for those in the System administrator group. 
-
+- I created a device restrictions policy that requires passwords and restricts password sharing on all IOS devices except for those in the System administrator group.
+- I created a policy to install office 365 apps for those in the IT team
+- i configured a policy to block organization data from backing up to icloud and from the use of jailbroken devices. 
